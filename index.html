@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .block {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .btn {
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #dfedad;
+        }
+
+        .title-button {
+            padding-top: 10px;
+            font-size: 1.6rem;
+        }
+
+        .title-between {
+            font-size: 1.8rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hoang Ngoc</h2>
+        <div class="wrapper">
+            <div class="block">
+                <button class="btn win">Win</button>
+                <span class="title-button title-win"></span>
+            </div>
+            <span class="title-between">-</span>
+            <div class="block">
+                <button class="btn loser">Loser</button>
+                <span class="title-button title-loser"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js.js"></script>
+</body>
+
+</html>
